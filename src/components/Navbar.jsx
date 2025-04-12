@@ -1,8 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+    const navLinks = [
+        "Game News",
+        "My Profile",
+        "Browse Gamers",
+        "My Favorite Games"
+    ];
   return (
-    <nav>Navbar</nav>
+    <nav id='global-nav'>
+        <Link id='logo-link'>Logo</Link>
+        <nav className='dynamic-nav'>
+            {navLinks.map((link, index) => (
+                <Link key={index}>{link}</Link>
+            ))}
+        </nav>
+        <nav id='account-logout-links'>
+            <Link>Account Settings</Link>
+            <Link>Logout</Link>
+        </nav>
+    </nav>
   )
 }
 

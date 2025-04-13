@@ -17,7 +17,7 @@ const Navbar = () => {
             ))}
         </nav>
         <nav id='account-logout-links'>
-            <Link>Account Settings</Link>
+            <Link>Settings</Link>
             <Link>Logout</Link>
         </nav>
     </nav>

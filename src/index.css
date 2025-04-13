@@ -1,0 +1,56 @@
+/***************** 
+Global Settings 
+*****************/
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", 'Courier New', Courier, monospace;
+}
+
+#global-nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding: 0 2vw;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rgb(32, 32, 32);
+}
+
+.dynamic-nav > a,
+#logo-link,
+#account-logout-links > a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+#logo-link {
+    width: 10vw;
+}
+
+.dynamic-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+#account-logout-links {
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#global-footer {
+    width: 100vw;
+    display: flex;
+    height: 5vh;
+    justify-content: space-evenly;
+}
+
+/******END OF FILE!!!******/

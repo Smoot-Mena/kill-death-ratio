@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { sub } from 'date-fns';
 
 const Home = () => {
     const images = [
@@ -20,7 +21,7 @@ const Home = () => {
     <section id='home-page'>
         <article>
             <header className='article-header'>
-                <h3>Latest Story</h3>
+                <h3 id='latest-story'>Latest Story</h3>
                 <h1>
                     <Link>Elder Scrolls Online Trash?!</Link>
                 </h1>
@@ -35,12 +36,12 @@ const Home = () => {
         </article>
         <article>
             <header className='article-header'>
-                <h3>Latest Games</h3>
+                <h3 id='latest-games'>Latest Games</h3>
             </header>
             <section className='article-para'>
                 {images.map((image, index) => (
                     <figure key={index}>
-                        <img src={image.image} alt={image.title} />
+                        <img className='game-pic' src={image.image} alt={image.title} />
                         <figcaption>{image.title}</figcaption>
                     </figure>
                 ))}

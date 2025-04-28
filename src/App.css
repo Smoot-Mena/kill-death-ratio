@@ -1,0 +1,47 @@
+/****************
+* Home Styles *
+****************/
+
+#home-page {
+    padding: 5vh 5vw;
+}
+
+article {
+    width: inherit;
+    margin-bottom: 10vh;
+}
+
+.article-header > h3 {
+    font-size: 2.5em;
+    margin-bottom: 2vh;
+}
+
+.article-header > h1 {
+    font-size: 2em;
+    margin-bottom: 1vh;
+}
+
+.article-timestamp {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+.article-para {
+    line-height: 2.5vh;
+    /* backdrop-filter: blur(10px); */
+}
+
+.article-para:last-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+figure {
+    text-align: center;
+}
+
+/*****END OF FILE!!!*****/
